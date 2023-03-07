@@ -3,6 +3,6 @@
 <p><%=homeStartingContent%></p>
 <% arr.forEach((obj)=>{ %>
     <h1><%=obj.postTitle%></h1>
-    <p><%=obj.postBody.substring(0,200)+" . . . . ."%><a href="/post/<%= obj.postTitle %>">Read More</a></p>
+    <p><%=obj.postBody.substring(0,200)+" . . . . ."%><a href="/post/<%= obj._id %>">Read More</a></p>
 <% }) %>
 <%- include('partials/footer'); -%>
